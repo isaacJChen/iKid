@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56H-Pb-PDa">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Good" id="aeV-zJ-3Xk">
+                                        <connections>
+                                            <action selector="goodBTN:" destination="BYZ-38-t0r" id="n29-E4-cJE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Pun" id="BJE-fw-xg1">
+                                        <connections>
+                                            <action selector="punBTN:" destination="BYZ-38-t0r" id="bAS-Lo-wNN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Dad" id="vLs-g1-a5k">
+                                        <connections>
+                                            <action selector="dadBTN:" destination="BYZ-38-t0r" id="63q-r1-3Fm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XFs-rJ-fU5"/>
+                                    <barButtonItem title="Next" id="hSU-63-R0i">
+                                        <connections>
+                                            <action selector="nextBTN:" destination="BYZ-38-t0r" id="S8K-HG-acw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a joke type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zr-pj-9Tn">
+                                <rect key="frame" x="0.0" y="367.66666666666669" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2zr-pj-9Tn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ybi-Tm-Tsu"/>
+                            <constraint firstItem="2zr-pj-9Tn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gha-Vm-Fmg"/>
+                            <constraint firstItem="2zr-pj-9Tn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kZC-Rp-bwr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2zr-pj-9Tn" secondAttribute="trailing" id="vVc-hR-qsi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="display" destination="2zr-pj-9Tn" id="f6R-fw-Mw9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--Good View Controller1-->
+        <scene sceneID="zlr-ch-Pzi">
+            <objects>
+                <viewController storyboardIdentifier="good1" id="dOC-H0-glg" customClass="GoodViewController1" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EBA-Kd-8Fq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="4cc-8a-Chq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dro-Nd-Acx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="134"/>
+        </scene>
+        <!--Good View Controller2-->
+        <scene sceneID="ahW-kY-OAi">
+            <objects>
+                <viewController storyboardIdentifier="good2" id="sUn-Ab-myv" customClass="GoodViewController2" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ncf-hD-bKb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="l45-M6-UgP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMY-Gq-jzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="134"/>
+        </scene>
+    </scenes>
+</document>
